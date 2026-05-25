@@ -1,0 +1,29 @@
+---
+description: DX audit protocol. Inspect README, quickstart, scripts, contributing guide, env docs, error messages, and tooling, score friction, and report or implement fixes.
+alwaysApply: false
+---
+
+# DX audit
+
+A protocol for auditing and improving developer experience in a codebase. Walk it as a new contributor would. Situational, so invoke it when onboarding friction surfaces.
+
+## What to inspect
+
+1. README: first-paragraph clarity, a copy-pasteable quickstart, current commands.
+2. Quickstart and setup: the clone-to-running path, in dependency order, with prerequisites.
+3. Scripts: install / dev / build / test / lint / format in a task runner, with names that match the docs.
+4. Contributing guide: branch naming, commit format, PR rules, how to run tests, not drifted from reality.
+5. Environment docs: an `.env.example` listing every variable, annotated with what it is and where to get it.
+6. Error messages: setup fails loudly and actionably, not with a raw stack trace.
+7. Tooling: linter, formatter, type-checker wired to a hook or CI so they run without being remembered.
+
+## How to score friction
+
+Per dimension: None (works, discoverable) / Low (incomplete or stale) / Medium (wrong or absent where it matters) / High (absent or misleading, blocks the contributor). Anchor with two timings: time to first run (clone to running app) and time to first contribution (clone to tested, formatted, ready PR).
+
+## Modes
+
+- Report-only (default): inspect, score, produce a prioritized findings list grouped by effort. Change nothing.
+- Implement: apply fixes with approval, highest-friction and lowest-effort first; verify each on a clean checkout.
+
+A README that has not been run on a clean checkout is a guess, not a fix.
