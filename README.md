@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://ormus.solutions/mascot/pixellab_liquid_to_terminal.gif" alt="DX Audit Skills" width="128" style="image-rendering: pixelated;" />
+  <img src="https://ormus.solutions/mascot/pixellab_liquid_to_spiral.gif" alt="DX Audit Skills" width="128" style="image-rendering: pixelated;" />
 </p>
 
 <h1 align="center">DX Audit Skills</h1>
